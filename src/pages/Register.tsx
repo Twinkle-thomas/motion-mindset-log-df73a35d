@@ -41,13 +41,20 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      <Card className="w-full max-w-md p-8 space-y-6">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <Card className="w-full max-w-md p-8 space-y-6 shadow-2xl shadow-primary/10 border-primary/20">
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-glow text-primary-foreground mb-4">
-            <Dumbbell className="w-8 h-8" />
+          <div className="relative inline-block mb-2">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-xl opacity-30"></div>
+            <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
+              <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
+                <Dumbbell className="w-10 h-10 text-primary" />
+              </div>
+            </div>
           </div>
-          <h1 className="text-3xl font-bold tracking-tight">Create Account</h1>
+          <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Create Account
+          </h1>
           <p className="text-muted-foreground">Join Fitness Tracker today</p>
         </div>
 
